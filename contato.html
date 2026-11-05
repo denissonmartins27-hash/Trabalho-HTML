@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato | Constrular</title>
+</head>
+<body>
+  <a href="#conteudo">Pular para o conteúdo</a>
+
+  <header>
+    <p>Constrular Materiais de Construção</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Contato e orçamento</h1>
+
+    <section>
+      <h2>Peça seu orçamento</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="nome">Nome</label><br>
+          <input type="text" id="nome" name="nome" required>
+        </p>
+        <p>
+          <label for="email">E-mail</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="telefone">Telefone com DDD</label><br>
+          <input type="tel" id="telefone" name="telefone" required
+                 pattern="\(?\d{2}\)?\s?9?\d{4}-?\d{4}"
+                 title="Exemplo: (35) 99999-9999">
+        </p>
+        <p>
+          <label for="categoria">Categoria</label><br>
+          <select id="categoria" name="categoria" required>
+            <option value="">Selecione</option>
+            <option>Tintas</option>
+            <option>Hidráulica</option>
+            <option>Elétrica</option>
+            <option>Ferramentas</option>
+          </select>
+        </p>
+        <p>
+          <label for="mensagem">Mensagem</label><br>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </p>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Outros contatos</h2>
+      <p>Telefone: (35) 0000-0000</p>
+      <p>E-mail: contato@constrular.example</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Rua Sao Pedro, 123 – Centro – Natercia/MG</p>
+    <p>Telefone: (35) 997581512</p>
+    <p>&copy; 2026 Constrular </p>
+  </footer>
+</body>
+</html>
