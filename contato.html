@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contato | Constrular</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header>
+  <header class="site-header">
     <p>Constrular Materiais de Construção</p>
     <nav>
-      <ul>
+      <ul class="menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="catalogo.html">Catálogo</a></li>
         <li><a href="sobre.html">Sobre</a></li>
@@ -20,12 +21,13 @@
     </nav>
   </header>
 
-  <main id="conteudo">
+  <main id="conteudo" class="conteudo">
     <h1>Contato e orçamento</h1>
 
+    <div class="duas-colunas">
     <section>
       <h2>Peça seu orçamento</h2>
-      <form action="#" method="post">
+      <form class="formulario" action="#" method="post">
         <p>
           <label for="nome">Nome</label><br>
           <input type="text" id="nome" name="nome" required>
@@ -54,21 +56,22 @@
           <label for="mensagem">Mensagem</label><br>
           <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
         </p>
-        <button type="submit">Enviar</button>
+        <button class="botao" type="submit">Enviar</button>
       </form>
     </section>
 
-    <aside>
+    <aside class="destaque-aside">
       <h2>Outros contatos</h2>
       <p>Telefone: (35) 0000-0000</p>
       <p>E-mail: contato@constrular.example</p>
     </aside>
+    </div>
   </main>
 
-  <footer>
-    <p>Rua Sao Pedro, 123 – Centro – Natercia/MG</p>
-    <p>Telefone: (35) 997581512</p>
-    <p>&copy; 2026 Constrular </p>
+  <footer class="site-footer">
+    <p>Rua Exemplo, 123 – Centro – Pouso Alegre/MG</p>
+    <p>Telefone: (35) 0000-0000</p>
+    <p>&copy; 2026 Constrular (loja fictícia)</p>
   </footer>
 </body>
 </html>
